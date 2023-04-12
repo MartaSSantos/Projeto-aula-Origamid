@@ -8,6 +8,11 @@ body {
     margin-top: 60px;
 }
 
+.header{
+    display: grid;
+    align-items: center;
+    gap: 60px;
+}
 img {
     max-width: 100%;
     display: block;
@@ -15,6 +20,12 @@ img {
 
 a {
     text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
 }
 
 p,
@@ -36,12 +47,18 @@ p {
     justify-content: center;
 }
 
-.menu a {
+.menu li {
     background-color: #ffff;
     padding: 15px 30px;
     color: #000;
     border-radius: 4px;
     text-transform: uppercase;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu li:hover{
+    border: solid 2px #900;
 }
 
 .conteudo {
@@ -76,10 +93,11 @@ p {
     padding: 15px 30px;
     border-radius: 4px;
     text-transform: uppercase;
+    transition: 0.3s;
 }
 
 .mais:hover {
-    background-color: tomato;
+    background-color: #900;
 }
 
 .subtitulo {
@@ -91,12 +109,12 @@ p {
     align-self: center;
 }
 
-.vantagens{
+.vantagens {
     background-color: #fff;
     padding: 40px;
 }
 
-.vantagens-item{
+.vantagens-item {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 10px 20px;
@@ -107,7 +125,7 @@ p {
     grid-column: 2;
 }
 
-.rodape{
+.rodape {
     background-color: #fff;
     width: 100%;
     text-align: center;
